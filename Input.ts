@@ -23,12 +23,8 @@ export default class Input {
         this.#context = context;
     }
 
-    turnOnShortCircuit() {
-        this.#shortCircuit = true;
-    }
-
-    turnOffShortCircuit() {
-        this.#shortCircuit = false;
+    setShortCircuit(shortCircuit: boolean) {
+        this.#shortCircuit = shortCircuit;
     }
 
     setCondition(condition: Condition) {

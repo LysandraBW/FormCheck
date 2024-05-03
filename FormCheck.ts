@@ -7,10 +7,6 @@ export default class FormCheck {
         return this.#inputs[name];
     }
 
-    getInputs(): {[key: string]: Input} {
-        return this.#inputs;
-    }
-
     addInput(name: string, input: Input): void {
         this.#inputs[name] = input;
     }
